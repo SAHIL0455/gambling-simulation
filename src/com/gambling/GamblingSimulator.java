@@ -7,6 +7,8 @@ public class GamblingSimulator {
         int everyGameBet = 1;
         int days = 21;
         int win = 1;
+        int numberofWin = 0;
+        int numberofLoss = 0;
         for (int i = 1; i < days; i++) {
             int handCash = everyStake;
             while (handCash > 50 && handCash < 150) {
@@ -22,9 +24,12 @@ public class GamblingSimulator {
             }
             if (handCash == 50) {
                 System.out.println("You Have Loss 50% Stake Today");
+                numberofLoss++;
             } else {
                 System.out.println("You Have Win 50% Stake Today");
+                numberofWin++;
             }
         }
+        System.out.println("Number of Days are win is "+numberofWin+" Number of Days are Loss is "+numberofLoss);
     }
 }
