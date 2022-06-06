@@ -30,6 +30,6 @@ public class GamblingSimulator {
                 numberofWin++;
             }
         }
-        System.out.println("Number of Days are win is "+numberofWin+" Number of Days are Loss is "+numberofLoss);
+        System.out.println("Number of luckiest Days is "+numberofWin+" Number of Unluckiest Days "+numberofLoss);
     }
 }
